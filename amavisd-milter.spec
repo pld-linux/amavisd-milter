@@ -11,7 +11,7 @@ Source0:	http://downloads.sourceforge.net/amavisd-milter/%{name}-%{version}.tar.
 Source1:	%{name}.init
 Source2:	%{name}.sysconfig
 BuildRequires:	libmilter-devel >= 8.13
-Requires:	amavisd-new >= 1:2.4.3
+Requires:	amavisd-new >= 1:2.7.0
 Requires:	rc-scripts
 Requires(post,preun):	/sbin/chkconfig
 BuildRequires:	rpmbuild(macros) >= 1.268
