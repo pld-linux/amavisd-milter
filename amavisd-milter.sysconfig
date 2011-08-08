@@ -1,0 +1,5 @@
+# Set whatever options you want here. See amavisd-milter(8).
+AMAVISD_MILTER_OPTIONS=""
+
+# user amavisd milter to start as
+AMAVIS_USER=amavis
