@@ -11,10 +11,11 @@ Source0:	http://downloads.sourceforge.net/amavisd-milter/%{name}-%{version}.tar.
 Source1:	%{name}.init
 Source2:	%{name}.sysconfig
 BuildRequires:	libmilter-devel >= 8.13
+BuildRequires:	rpmbuild(macros) >= 1.268
 Requires:	amavisd-new >= 1:2.7.0
 Requires:	rc-scripts
 Requires(post,preun):	/sbin/chkconfig
-BuildRequires:	rpmbuild(macros) >= 1.268
+Obsoletes:	amavisd-new-sendmail < 1:2.7.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_localstatedir	%{_var}/spool/amavis
