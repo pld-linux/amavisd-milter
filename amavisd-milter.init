@@ -6,8 +6,6 @@
 #
 # description: amavisd-milter
 # processname: amavisd-milter
-# config:
-# pidfile:
 #
 # $Id$
 
